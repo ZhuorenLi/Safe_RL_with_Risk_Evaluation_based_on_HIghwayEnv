@@ -1,0 +1,16 @@
+numpy
+pandas
+numba
+pygame
+matplotlib
+seaborn
+six
+docopt
+osqp
+scipy
+importlib-metadata==4.13.0
+cloudpickle>=1.2.0
+gym-notices>=0.0.4
+tensorboardX
+torch
+tensorboard

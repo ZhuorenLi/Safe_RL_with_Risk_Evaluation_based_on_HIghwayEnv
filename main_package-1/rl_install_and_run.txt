@@ -1,0 +1,29 @@
+sudo apt install virtualenv
+build env
+virtualenv -p /usr/bin/python3.6 .venv
+(conda create --name XXXXX python=3.7)
+activate：
+source .venv/bin/activate
+(source activate XXXXX)
+
+pip install highway-env
+pip install git+https://github.com/eleurent/rl-agents
+down the rl-agent as a starter
+pip install tensorboard
+
+sudo apt-get install ffmpeg
+
+(pip install -i https://pypi.tuna.tsinghua.edu.cn/simple gym==0.25.0)gym version back
+
+run the code
+//run dqn 
+//run scripts/experiments.py
+python experiments.py evaluate configs/HighwayEnv/env.json  configs/HighwayEnv/agents/DQNAgent/dqn.json --train --episodes 100
+
+
+//out 
+tensorboard --logdir=./
+
+
+ nohup python experiments.py evaluate configs/HighwayEnv/env.json --no-display  configs/HighwayEnv/agents/DQNAgent/dqn.json --train --episodes=10000 &
+
